@@ -152,7 +152,7 @@ public class JDBCTools {
 	private static DataSource dataSource = null;
 	//数据库连接池应只被初始化一次。
 	static {
-		dataSource = new ComboPooledDataSource("mysql");
+		dataSource = new ComboPooledDataSource("oracle");
 	}
 	
 	public static Connection getConnection() throws Exception {
